@@ -58,7 +58,7 @@ io.on("connection",(socket)=>{
         console.log(data,"new data of recieverId")
         const user=activeUsers.find((user)=>user.userId===receiverId)
         console.log(user,"sending from sockt jto")
-        console.log("dataasock",data)
+       
         if(user){
             io.to(user.socketId).emit("receive-message",data)
         }
