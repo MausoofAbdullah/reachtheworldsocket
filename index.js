@@ -7,7 +7,7 @@ app.options("*",cors())
 app.use(cors())
 const io=require('socket.io')(8800,{
     cors:{
-        origin:["https://www.friend.reachtheworld.tech/","https://www.friend.reachtheworld.tech","http://localhost:3000"]
+        origin:["https://client-reachtheworld.vercel.app/","https://client-reachtheworld.vercel.app/","http://localhost:3000"]
     }
 })
 
